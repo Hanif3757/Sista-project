@@ -30,6 +30,7 @@ body {
 
 hr {
     background-color: black;
+    margin-left: 0;
 }
 
 .container {
@@ -37,3 +38,46 @@ hr {
 }
 
 /* cards */
+
+/* jadwal Seminar */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 360px) {
+    #table {
+        width: 80%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 575.98px) {
+
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}

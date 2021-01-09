@@ -16,6 +16,11 @@
           text-decoration: none;
       }
     </style>
+    <script>
+        function direct_table(){
+            window.location.href = "detail_jadwal_seminarTA.html";
+        }
+    </script>
   </head>
   <body>
 
@@ -127,7 +132,7 @@
                 <div class="container" style="background-color: #ffffff">
                     <div class="row">
                         
-                        <div class="col-md-8 p-md-4 mt-4 ">
+                        <div class="col-lg-12 col-md-12 col-sm-10 col-12 col-xl-8 p-md-5 mt-4 ">
                             
                             <h3>
                                SISTA
@@ -141,9 +146,9 @@
                             </p>
                         </div>
 
-                        <div class="col-md-4 p-md-5">
+                        <div class="col-md-4 p-md-5" id="sidebar">
 
-                            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <div class="card border-primary mb-3" style="max-width: 18rem;" >
                                 <div class="card-header">Berita Populer</div>
                                 <div class="card-body text-primary">
                                     <ul>
@@ -175,6 +180,94 @@
 
     </div>
     <!-- end content 1  -->
+    
+
+    
+<!-- content 2 -->
+<div class="container">
+    <div class="container" style="background-color: #ffffff;">
+        <div class="row" id="content">
+            <div class="col-lg-12 col-md-12 col-sm-10 col-12 pt-5 pl-5 pr-5 pb-2">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Untuk melihat detail data, click kolom tabel data</strong> 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                <h3 class="ml-md-5">
+                    Jadwal Seminar TA
+                 <hr style="width: 10%">
+                 </h3>
+            </div>
+            <!-- table sectio -->
+            <div class="row  m-1 mb-4" id="table">
+                <div class="table-responsive col-lg-12 col-md-12 col-sm-10 col-12  offset-lg-1  ">
+                  
+                    <form class="form-inline my-2 my-lg-0 offset-0">
+                        <input class="form-control mr-sm-0" type="search" placeholder="Cari jadwal anda" aria-label="Search">
+                      </form>
+                  <br>
+                    <table class="table table-hover">
+                        <thead class="bg-dark text-light">
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">NIM</th>
+                            <th scope="col">Mahasiswa/i</th>
+                            <th scope="col">Seminar</th>                    
+                            <th scope="col">Waktu</th>
+                            <th scope="col">Ruangan</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                          <tr onclick="direct_table()" style="cursor: pointer;">
+                            <th scope="row">1</th>
+                            <td>
+                                0110117043 
+                            </td>
+                            <td>Siti Maemunah</td>
+                            <td>Proposal</td>
+                            <td>10.00  14-01-2021</td>
+                            <td>Online</td>
+                          </tr>
+                          <tr onclick="direct_table()" style="cursor: pointer;"  >
+                           <th scope="row">2</th>
+                           <td>0110217053 </td>
+                           <td>Muhammad Ronald</td>
+                           <td>Seminar Hasil</td>
+                           <td>12.00  14-01-2021</td>
+                           <td>Online</td>
+                          </tr>
+                          <tr onclick="direct_table()" style="cursor: pointer;">
+                           <th scope="row" >3</th>
+                           <td>0110217075 </td>
+                           <td>Budi Hernawan</td>
+                           <td>Seminar Akhir</td>
+                           <td>10.00  15-01-2021</td>
+                           <td>Online</td>
+                          </tr>
+                          <tr  onclick="direct_table()" style="cursor: pointer;">
+                           <th scope="row" >4</th>
+                           <td>0110217075 </td>
+                           <td>Jefri Nichol</td>
+                           <td>Seminar Akhir</td>
+                           <td>12.00  15-01-2021</td>
+                           <td>Online</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+
+
+<!-- end content 2  -->
 
     <!-- content 2 - berita -->
     <div class="container mt-1">
@@ -192,7 +285,7 @@
             </div>
             <!-- cards -->
                 <div class="row p-md-3">
-                        <div class="col-md-4 p-md-4" > 
+                        <div class="col-md-4 p-sm-4 mb-3" > 
                             <div class="card" style="width: 18rem;" id="card">
                                 <img class="card-img-top" src="img/berita1.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -208,7 +301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 p-md-4" > 
+                        <div class="col-md-4 p-sm-4 mb-3" > 
                             <div class="card" style="width: 18rem;" id="card">
                                 <img class="card-img-top" src="img/berita2.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -227,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 p-md-4" > 
+                        <div class="col-md-4 p-sm-4 mb-3" > 
                             <div class="card" style="width: 18rem;" id="card">
                                 <img class="card-img-top" src="img/berita3.jpg" alt="Card image cap">
                                 <div class="card-body">
