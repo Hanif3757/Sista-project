@@ -10,6 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel=”stylesheet” href=”css/bootstrap.min.css” />
     <title>Register</title>
+    <style>
+        body{
+            padding: 0;
+            background-image: url(img/bgl.jpg);
+        }
+    </style>
 </head>
 <body>
 
@@ -20,7 +26,7 @@
                 <h3>Register</h3>
             </div>
             <div class="card-body">
-                <form>
+                <!-- <form> -->
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-4 col-form-label">Name :</label>
                         <div class="col-sm-8">
@@ -46,14 +52,31 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col text-center">
-                            <button type="submit" class="btn" style="background: #4CE5A5;">Sign Up</button>
+                        <div class="col-3 text-center">
+                            <input class="btn btn-success" type="button" name="submit" value="Sign in" onclick="pindah1()" style="background: #4CE5A5;">
                         </div>
+                        <div class="col-4 text-center">
+                            <input class="btn btn-success" type="submit" name="submit" value="Sign Up" onclick="pindah2()" style="background: #4CE5A5;">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <a href="/" style="text-decoration: none; color: #4CE5A5; " >Back to Home </a>
+                        </div>
+                        
                     </div>
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </div>
+    <script>
+
+    function pindah1(){
+        window.location.href="/login.html";
+    }
+    function pindah2(){
+        alert("sign up berhasil");
+        window.location.href="/login.html";
+    }
+    </script>
     <!-- Optional JavaScript -->
     <script src="assets/js/jquery.js"></script> 
     <script src="assets/js/popper.js"></script> 
